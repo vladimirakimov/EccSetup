@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BusinessUnitNotFound" xml:space="preserve">
+    <value>BusinessUnit not found</value>
+  </data>
+  <data name="ChecklistNotFound" xml:space="preserve">
+    <value>Checklist not found</value>
+  </data>
+  <data name="CreateBusinessUnitFailure" xml:space="preserve">
+    <value>BusinessUnit was not created</value>
+  </data>
+  <data name="CreateChecklistFailure" xml:space="preserve">
+    <value>Checklist was not created</value>
+  </data>
+  <data name="CreateCustomerFailure" xml:space="preserve">
+    <value>Customer was not created</value>
+  </data>
+  <data name="CreateFlowFailure" xml:space="preserve">
+    <value>Flow was not created</value>
+  </data>
+  <data name="CreateIconFailure" xml:space="preserve">
+    <value>Icon was not created</value>
+  </data>
+  <data name="CreateInformationFailure" xml:space="preserve">
+    <value>Information was not created</value>
+  </data>
+  <data name="CreateInputFailure" xml:space="preserve">
+    <value>Input was not created</value>
+  </data>
+  <data name="CreateInstructionFailure" xml:space="preserve">
+    <value>Instruction was not created</value>
+  </data>
+  <data name="CreateLayoutFailure" xml:space="preserve">
+    <value>Layout was not created</value>
+  </data>
+  <data name="CreateOperationalDepartmentFailure" xml:space="preserve">
+    <value>Operational Department was not created</value>
+  </data>
+  <data name="CreateOperationFailure" xml:space="preserve">
+    <value>Operation was not created</value>
+  </data>
+  <data name="CreateOperatorActivityFailure" xml:space="preserve">
+    <value>Operator activity was not created</value>
+  </data>
+  <data name="CreateRemarkFailure" xml:space="preserve">
+    <value>Remark was not created</value>
+  </data>
+  <data name="CreateSourceFailure" xml:space="preserve">
+    <value>Source was not created</value>
+  </data>
+  <data name="CreateValidationFailure" xml:space="preserve">
+    <value>Validation was not created</value>
+  </data>
+  <data name="DeleteBusinessUnitFailure" xml:space="preserve">
+    <value>BusinessUnit was not deleted</value>
+  </data>
+  <data name="DeleteChecklistFailure" xml:space="preserve">
+    <value>Checklist was not deleted</value>
+  </data>
+  <data name="DeleteFlowFailure" xml:space="preserve">
+    <value>Flow was not deleted</value>
+  </data>
+  <data name="DeleteIconFailure" xml:space="preserve">
+    <value>Icon was not deleted</value>
+  </data>
+  <data name="DeleteInformationFailure" xml:space="preserve">
+    <value>Information was not deleted</value>
+  </data>
+  <data name="DeleteInputFailure" xml:space="preserve">
+    <value>Input was not deleted</value>
+  </data>
+  <data name="DeleteInstructionFailure" xml:space="preserve">
+    <value>Instruction was not deleted</value>
+  </data>
+  <data name="DeleteLayoutFailure" xml:space="preserve">
+    <value>Layout was not deleted</value>
+  </data>
+  <data name="DeleteOperationFailure" xml:space="preserve">
+    <value>Operation was not deleted</value>
+  </data>
+  <data name="DeleteRemarkFailure" xml:space="preserve">
+    <value>Remark was not deleted</value>
+  </data>
+  <data name="DeleteSourceFailure" xml:space="preserve">
+    <value>Source was not deleted</value>
+  </data>
+  <data name="DeleteValidationFailure" xml:space="preserve">
+    <value>Validation was not deleted</value>
+  </data>
+  <data name="FlowNotFound" xml:space="preserve">
+    <value>Flow not found</value>
+  </data>
+  <data name="GetBusinessUnitFailure" xml:space="preserve">
+    <value>BusinessUnit cannot be read</value>
+  </data>
+  <data name="GetChecklistFailure" xml:space="preserve">
+    <value>Checklist cannot be read</value>
+  </data>
+  <data name="GetFlowFailure" xml:space="preserve">
+    <value>Flow cannot be read</value>
+  </data>
+  <data name="GetIconFailure" xml:space="preserve">
+    <value>Icon cannot be read</value>
+  </data>
+  <data name="GetInformationFailure" xml:space="preserve">
+    <value>Information cannot be read</value>
+  </data>
+  <data name="GetInputFailure" xml:space="preserve">
+    <value>Input cannot be read</value>
+  </data>
+  <data name="GetInstructionFailure" xml:space="preserve">
+    <value>Instruction cannot be read</value>
+  </data>
+  <data name="GetLayoutFailure" xml:space="preserve">
+    <value>Layout cannot be read</value>
+  </data>
+  <data name="GetOperationFailure" xml:space="preserve">
+    <value>Operation cannot be read</value>
+  </data>
+  <data name="GetRemarkFailure" xml:space="preserve">
+    <value>Remark cannot be read</value>
+  </data>
+  <data name="GetSourceFailure" xml:space="preserve">
+    <value>Source cannot be read</value>
+  </data>
+  <data name="GetValidationFailure" xml:space="preserve">
+    <value>Validation cannot be read</value>
+  </data>
+  <data name="IconNotFound" xml:space="preserve">
+    <value>Icon not found</value>
+  </data>
+  <data name="InformationNotFound" xml:space="preserve">
+    <value>Information not found</value>
+  </data>
+  <data name="InputNotFound" xml:space="preserve">
+    <value>Input not found</value>
+  </data>
+  <data name="InstructionNotFound" xml:space="preserve">
+    <value>Instruction not found</value>
+  </data>
+  <data name="LayoutNotFound" xml:space="preserve">
+    <value>Layout not found</value>
+  </data>
+  <data name="ListBusinessUnitFailure" xml:space="preserve">
+    <value>BusinessUnits cannot be read</value>
+  </data>
+  <data name="ListChecklistFailure" xml:space="preserve">
+    <value>Checklists cannot be read</value>
+  </data>
+  <data name="ListFlowFailure" xml:space="preserve">
+    <value>Flows cannot be read</value>
+  </data>
+  <data name="ListIconFailure" xml:space="preserve">
+    <value>Icons cannot be read</value>
+  </data>
+  <data name="ListInformationFailure" xml:space="preserve">
+    <value>Informations cannot be read</value>
+  </data>
+  <data name="ListInputFailure" xml:space="preserve">
+    <value>Inputs cannot be read</value>
+  </data>
+  <data name="ListInstructionFailure" xml:space="preserve">
+    <value>Instructions cannot be read</value>
+  </data>
+  <data name="ListLayoutFailure" xml:space="preserve">
+    <value>Layouts cannot be read</value>
+  </data>
+  <data name="ListOperationFailure" xml:space="preserve">
+    <value>Operations cannot be read</value>
+  </data>
+  <data name="ListOperatorActivitiesFailure" xml:space="preserve">
+    <value>Operator activities cannot be read</value>
+  </data>
+  <data name="ListRemarkFailure" xml:space="preserve">
+    <value>Remarks cannot be read</value>
+  </data>
+  <data name="ListSourceFailure" xml:space="preserve">
+    <value>Sources cannot be read</value>
+  </data>
+  <data name="ListValidationFailure" xml:space="preserve">
+    <value>Validations cannot be read</value>
+  </data>
+  <data name="OperationNotFound" xml:space="preserve">
+    <value>Operation not found</value>
+  </data>
+  <data name="RemarkNotFound" xml:space="preserve">
+    <value>Remark not found</value>
+  </data>
+  <data name="SkipInvalid" xml:space="preserve">
+    <value>Query parameter $skip must be a sequence of digits.</value>
+  </data>
+  <data name="SkipRange" xml:space="preserve">
+    <value>Query parameter $skip must be greater or equal to 0 and less than {0}.</value>
+  </data>
+  <data name="SourceNotFound" xml:space="preserve">
+    <value>Source not found</value>
+  </data>
+  <data name="TopInvalid" xml:space="preserve">
+    <value>Query parameter $top must be a sequence of digits.</value>
+  </data>
+  <data name="TopRange" xml:space="preserve">
+    <value>Query parameter $top must be greater than 0 and less than {0}.</value>
+  </data>
+  <data name="UpdateBusinessUnitFailure" xml:space="preserve">
+    <value>BusinessUnit was not updated</value>
+  </data>
+  <data name="UpdateChecklistFailure" xml:space="preserve">
+    <value>Checklist was not updated</value>
+  </data>
+  <data name="UpdateFlowFailure" xml:space="preserve">
+    <value>Flow was not updated</value>
+  </data>
+  <data name="UpdateIconFailure" xml:space="preserve">
+    <value>Icon was not updated</value>
+  </data>
+  <data name="UpdateInformationFailure" xml:space="preserve">
+    <value>Information was not updated</value>
+  </data>
+  <data name="UpdateInputFailure" xml:space="preserve">
+    <value>Input was not updated</value>
+  </data>
+  <data name="UpdateInstructionFailure" xml:space="preserve">
+    <value>Instruction was not updated</value>
+  </data>
+  <data name="UpdateLayoutFailure" xml:space="preserve">
+    <value>Layout was not updated</value>
+  </data>
+  <data name="UpdateOperationFailure" xml:space="preserve">
+    <value>Operation was not updated</value>
+  </data>
+  <data name="UpdateRemarkFailure" xml:space="preserve">
+    <value>Remark was not updated</value>
+  </data>
+  <data name="UpdateSourceFailure" xml:space="preserve">
+    <value>Source was not updated</value>
+  </data>
+  <data name="UpdateValidationFailure" xml:space="preserve">
+    <value>Validation was not updated</value>
+  </data>
+  <data name="UploadFileFailure" xml:space="preserve">
+    <value>File was not uploaded</value>
+  </data>
+  <data name="ValidationNotFound" xml:space="preserve">
+    <value>Validation not found</value>
+  </data>
+  <data name="ListCustomerFailure" xml:space="preserve">
+    <value>Customers cannot be read</value>
+  </data>
+  <data name="ListOperationalDepartmentFailure" xml:space="preserve">
+    <value>Operational Departments cannot be read</value>
+  </data>
+  <data name="ListLocationFailure" xml:space="preserve">
+    <value>Locations cannot be read</value>
+  </data>
+  <data name="CreateLocationFailure" xml:space="preserve">
+    <value>Location was not created</value>
+  </data>
+  <data name="CreateTransportTypeFailure" xml:space="preserve">
+    <value>TransportType was not created</value>
+  </data>
+  <data name="ListTransportTypeFailure" xml:space="preserve">
+    <value>TransportType cannot be read</value>
+  </data>
+  <data name="CreateSiteFailure" xml:space="preserve">
+    <value>Site was not created</value>
+  </data>
+  <data name="ListSiteFailure" xml:space="preserve">
+    <value>Sites cannot be read</value>
+  </data>
+  <data name="CreateProductionSiteFailure" xml:space="preserve">
+    <value>ProductSite was not created</value>
+  </data>
+  <data name="ListProductionSiteFailure" xml:space="preserve">
+    <value>ProductionSite cannot be read</value>
+  </data>
+  <data name="CreateTypePlanningFailure" xml:space="preserve">
+    <value>TypePlanning was not created</value>
+  </data>
+  <data name="ListTypePlanningFailure" xml:space="preserve">
+    <value>TypePlanning cannot be read</value>
+  </data>
+  <data name="CreateDamageCodeFailure" xml:space="preserve">
+    <value>Damage Code was not created</value>
+  </data>
+  <data name="ListDamageCodeFailure" xml:space="preserve">
+    <value>Damage Codes cannot be read</value>
+  </data>
+  <data name="CreateStorageStatusFailure" xml:space="preserve">
+    <value>StorageStatus was not created</value>
+  </data>
+  <data name="ListStorageStatusFailure" xml:space="preserve">
+    <value>Storage status cannot be read</value>
+  </data>
+  <data name="DownloadFileFailure" xml:space="preserve">
+    <value>File cannot be downloaded</value>
+  </data>
+</root>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BusinessUnitNameCannotBeEmpty" xml:space="preserve">
+    <value>Business unit name cannot be null or empty</value>
+  </data>
+  <data name="BusinessUnitNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Business unit name cannot begin or end with white space</value>
+  </data>
+  <data name="BusinessUnitNameMandatory" xml:space="preserve">
+    <value>Business unit name mandatory</value>
+  </data>
+  <data name="CustomerCodeMandatory" xml:space="preserve">
+    <value>Customer code mandatory</value>
+  </data>
+  <data name="CustomerNameMandatory" xml:space="preserve">
+    <value>Cstomer name mandatory</value>
+  </data>
+  <data name="CustomerSourceMandatory" xml:space="preserve">
+    <value>Customer source mandatory</value>
+  </data>
+  <data name="FlowNameCannotBeEmpty" xml:space="preserve">
+    <value>Flow name cannot be null or empty</value>
+  </data>
+  <data name="FlowNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Flow name cannot begin or end with white space</value>
+  </data>
+  <data name="FlowNameMandatory" xml:space="preserve">
+    <value>Flow name mandatory</value>
+  </data>
+  <data name="IconDataPathCannotBeEmpty" xml:space="preserve">
+    <value>Icon data path cannot be null or empty</value>
+  </data>
+  <data name="IconDataPathMandatory" xml:space="preserve">
+    <value>Icon data path mandatory</value>
+  </data>
+  <data name="IconNameCannotBeEmpty" xml:space="preserve">
+    <value>Icon name cannot be null or empty</value>
+  </data>
+  <data name="IconNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Icon name cannot begin or end with white space</value>
+  </data>
+  <data name="IconNameMandatory" xml:space="preserve">
+    <value>Icon name mandatory</value>
+  </data>
+  <data name="InformationNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Information name cannot begin or end with white space</value>
+  </data>
+  <data name="InformationNameMandatory" xml:space="preserve">
+    <value>Information name mandatory</value>
+  </data>
+  <data name="InformationTagMandatory" xml:space="preserve">
+    <value>Information tag mandatory</value>
+  </data>
+  <data name="InputNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Input name cannot begin or end with white space</value>
+  </data>
+  <data name="InputNameMandatory" xml:space="preserve">
+    <value>Input name mandatory</value>
+  </data>
+  <data name="InputTagMandatory" xml:space="preserve">
+    <value>Input tag mandatory</value>
+  </data>
+  <data name="InstructionContentMandatory" xml:space="preserve">
+    <value>Instruction content mandatory</value>
+  </data>
+  <data name="InstructionNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Instruction name cannot begin or end with white space</value>
+  </data>
+  <data name="InstructionNameManadatory" xml:space="preserve">
+    <value>Instruction name mandatory</value>
+  </data>
+  <data name="InstructionNameMandatory" xml:space="preserve">
+    <value>Instruction name mandatory</value>
+  </data>
+  <data name="InstructionTagMandatory" xml:space="preserve">
+    <value>Instruction tag mandatory</value>
+  </data>
+  <data name="LayoutNameCannotBeEmpty" xml:space="preserve">
+    <value>Layout name cannot be null or empty</value>
+  </data>
+  <data name="LayoutNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Layout name cannot begin or end with white space</value>
+  </data>
+  <data name="LayoutNameMandatory" xml:space="preserve">
+    <value>Layout name mandatory</value>
+  </data>
+  <data name="NameMandatory" xml:space="preserve">
+    <value>Name manadatory</value>
+  </data>
+  <data name="OperationalDepartmentCodeMandatory" xml:space="preserve">
+    <value>Operational Department code mandatory.</value>
+  </data>
+  <data name="OperationalDepartmentSiteMandatory" xml:space="preserve">
+    <value>Operational Department site mandatory.</value>
+  </data>
+  <data name="OperationalDepartmentSourceMandatory" xml:space="preserve">
+    <value>Operational Department source mandatory.</value>
+  </data>
+  <data name="OperationDescriptionCannotBeEmpty" xml:space="preserve">
+    <value>Operation description cannot be null or empty</value>
+  </data>
+  <data name="OperationNameCannotBeEmpty" xml:space="preserve">
+    <value>Operation name cannot be null or empty</value>
+  </data>
+  <data name="OperationNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Operation name cannot begin or end with white space</value>
+  </data>
+  <data name="OperationNameMandatory" xml:space="preserve">
+    <value>Operation name mandatory</value>
+  </data>
+  <data name="RemarkNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Remark name cannot begin or end with white space</value>
+  </data>
+  <data name="RemarkNameMandatory" xml:space="preserve">
+    <value>Remark name manadatory</value>
+  </data>
+  <data name="SourceBusinessUnitMandatory" xml:space="preserve">
+    <value>Source business unit mandatory</value>
+  </data>
+  <data name="SourceDescriptionCannotBeEmpty" xml:space="preserve">
+    <value>Source description cannot be null or empty</value>
+  </data>
+  <data name="SourceDescriptionMandatory" xml:space="preserve">
+    <value>Source description mandatory</value>
+  </data>
+  <data name="SourceNameCannotBeEmpty" xml:space="preserve">
+    <value>Source name cannot be null or empty</value>
+  </data>
+  <data name="SourceNameCannotStartOrEndWithWhiteSpace" xml:space="preserve">
+    <value>Source name cannot begin or end with white space</value>
+  </data>
+  <data name="SourceNameMandatory" xml:space="preserve">
+    <value>Source name mandatory</value>
+  </data>
+  <data name="ValidationNameMandatory" xml:space="preserve">
+    <value>Validation name mandatory</value>
+  </data>
+  <data name="ValidationTagMandatory" xml:space="preserve">
+    <value>Validation tag mandatory</value>
+  </data>
+  <data name="LocationIsRackMandatory" xml:space="preserve">
+    <value>Location IsRack mandatory</value>
+  </data>
+  <data name="LocationIsRackNotBoolean" xml:space="preserve">
+    <value>IsRack  field not boolean</value>
+  </data>
+  <data name="LocationGateMandatory" xml:space="preserve">
+    <value>Location Gate mandatory</value>
+  </data>
+  <data name="LocationPositionMandatory" xml:space="preserve">
+    <value>Location Position mandatory</value>
+  </data>
+  <data name="LocationRowMandatory" xml:space="preserve">
+    <value>Location Row mandatory</value>
+  </data>
+  <data name="LocationSiteMandatory" xml:space="preserve">
+    <value>Location Site mandatory</value>
+  </data>
+  <data name="LocationSourceMandatory" xml:space="preserve">
+    <value>Location  Source mandatory</value>
+  </data>
+  <data name="LocationTypeMandatory" xml:space="preserve">
+    <value>Location Type mandatory</value>
+  </data>
+  <data name="LocationWarehouseMandatory" xml:space="preserve">
+    <value>Location Warehouse mandatory</value>
+  </data>
+  <data name="TransportTypeCodeMandatory" xml:space="preserve">
+    <value>Transport Type code mandatory</value>
+  </data>
+  <data name="TransportTypeNameMandatory" xml:space="preserve">
+    <value>Transport Type name mandatory</value>
+  </data>
+  <data name="TransportTypeSourceMandatory" xml:space="preserve">
+    <value>Transport Tyape source mandatory </value>
+  </data>
+  <data name="SiteCodeMandatory" xml:space="preserve">
+    <value>Site Code mandatory</value>
+  </data>
+  <data name="SiteSourceMandatory" xml:space="preserve">
+    <value>Site Source mandatory</value>
+  </data>
+  <data name="ProductionSiteCodeMandatory" xml:space="preserve">
+    <value>ProductionSite code mandatory</value>
+  </data>
+  <data name="ProductionSiteNameMandatory" xml:space="preserve">
+    <value>ProductionSIte name mandatory</value>
+  </data>
+  <data name="ProductionSiteSourceMandatory" xml:space="preserve">
+    <value>ProductionSite source mandatory</value>
+  </data>
+  <data name="TypePlanningCodeMandatory" xml:space="preserve">
+    <value>TypePlanning code mandatory</value>
+  </data>
+  <data name="TypePlanningNameMandatory" xml:space="preserve">
+    <value>TypePlanning name mandatory</value>
+  </data>
+  <data name="TypePlanningSourceMandatory" xml:space="preserve">
+    <value>TypePlanning source mandatory</value>
+  </data>
+  <data name="DamageCodeCodeMandatory" xml:space="preserve">
+    <value>DamageCode Code mandatory</value>
+  </data>
+  <data name="DamageCodeDamagedQuantityRequiredMandatory" xml:space="preserve">
+    <value>DamageCode DamagedQuantityRequired mandatory</value>
+  </data>
+  <data name="DamageCodeNameMandatory" xml:space="preserve">
+    <value>DamageCode Name mandatory</value>
+  </data>
+  <data name="DamageCodeSourceMandatory" xml:space="preserve">
+    <value>DamageCode source mandatory</value>
+  </data>
+  <data name="DamageCodeIsNotBoolean" xml:space="preserve">
+    <value>DamageCode is not boolean</value>
+  </data>
+  <data name="StorageStatusCodeMandatory" xml:space="preserve">
+    <value>StorageStatus code mandatory</value>
+  </data>
+  <data name="StorageStatusDefaultMandatory" xml:space="preserve">
+    <value>StorageStatus default mandatory</value>
+  </data>
+  <data name="StorageStatusNameMandatory" xml:space="preserve">
+    <value>StorageStatus name mandatory</value>
+  </data>
+  <data name="StorageStatusDefaultNotBoolean" xml:space="preserve">
+    <value>StorageStatus default not boolean</value>
+  </data>
+  <data name="StorageStatusSourceMandatory" xml:space="preserve">
+    <value>StorageStatus source mandatory</value>
+  </data>
+</root>

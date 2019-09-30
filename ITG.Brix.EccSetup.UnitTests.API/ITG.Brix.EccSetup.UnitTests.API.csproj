@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\BuildingBlocks\**" />
+    <EmbeddedResource Remove="Controllers\BuildingBlocks\**" />
+    <None Remove="Controllers\BuildingBlocks\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ConfigurationDataControllerTests.cs" />
+    <Compile Remove="Controllers\InputsControllerTests.cs" />
+    <Compile Remove="Controllers\InstructionsControllerTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.0" />
+    <PackageReference Include="FluentAssertions" Version="5.6.0" />
+    <PackageReference Include="MediatR" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITG.Brix.EccSetup.API.Context\ITG.Brix.EccSetup.API.Context.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\ITG.Brix.EccSetup.API\ITG.Brix.EccSetup.API.csproj" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>

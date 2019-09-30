@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "40a85b7a-a978-49fd-9c13-32ac8814ec85",
+		"name": "Layouts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create_Layouts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tessaaa\",\n    \"description\": \"Description\",\n    \"image\": \"Image\"\n}"
+				},
+				"url": {
+					"raw": "{{EccSetupApi}}/layouts?api-version=1.0",
+					"host": [
+						"{{EccSetupApi}}"
+					],
+					"path": [
+						"layouts"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display_Layouts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "67d5e543-e8d1-4f02-bc92-a439ccd481e7",
+						"exec": [
+							"var layouts = pm.response.json();",
+							"",
+							"if (layouts){",
+							"    pm.test('Layouts were found and returned in Body');",
+							"}",
+							"else {",
+							"    pm.test('Layouts were not found and returned in Body', function(){throw new Error();} );",
+							"}",
+							"",
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202,204]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{EccSetupApi}}/layouts?api-version=1.0",
+					"host": [
+						"{{EccSetupApi}}"
+					],
+					"path": [
+						"layouts"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific_Flow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{EccSetupApi}}/Layouts/37b8b66a-d347-4a87-98d4-3b6e365d444b?api-version=1.0",
+					"host": [
+						"{{EccSetupApi}}"
+					],
+					"path": [
+						"Layouts",
+						"37b8b66a-d347-4a87-98d4-3b6e365d444b"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Layout",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "1884817638",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Tessa Tessa Tessa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{EccSetupApi}}/Layouts/37b8b66a-d347-4a87-98d4-3b6e365d444b?api-version=1.0",
+					"host": [
+						"{{EccSetupApi}}"
+					],
+					"path": [
+						"Layouts",
+						"37b8b66a-d347-4a87-98d4-3b6e365d444b"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Layout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "1884817638",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{EccSetupApi}}/layouts/37b8b66a-d347-4a87-98d4-3b6e365d444b?api-version=1.0",
+					"host": [
+						"{{EccSetupApi}}"
+					],
+					"path": [
+						"layouts",
+						"37b8b66a-d347-4a87-98d4-3b6e365d444b"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cbfebc75-5e38-4c4d-8730-e04e5d671a36",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a213d83b-d059-46ac-b3da-5229377d861c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

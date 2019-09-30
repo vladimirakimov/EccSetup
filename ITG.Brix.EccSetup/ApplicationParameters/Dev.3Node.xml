@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/BrixEOrderEccSetup" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="ITG.Brix.EccSetup.API_InstanceCount" Value="1" />
+    <Parameter Name="ITG.Brix.APPINSIGHTS_INSTRUMENTATIONKEY" Value="b681d9a5-4dc2-40f7-9e8d-a227faa9ac93" />
+    <Parameter Name="ASPNETCORE_ENVIRONMENT" Value="Staging" />
+    <Parameter Name="DatabaseConnectionString" Value="mongodb://co-ac-eu1-eccsetup-dvlp:XYCXnsd5Zl8yEzyoVWVkGAU9imgrf5eJXEEDv4Cv8jaUXh3ASpEN4jEtp44Cog9ZacKb76P99wDL9XVcqwct5w==@co-ac-eu1-eccsetup-dvlp.documents.azure.com:10255/?ssl=true&#38;replicaSet=globaldb" />
+  </Parameters>
+</Application>

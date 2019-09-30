@@ -1,0 +1,94 @@
+﻿using FluentAssertions;
+using ITG.Brix.EccSetup.Application.Cqs.Commands.Handlers;
+using ITG.Brix.EccSetup.Domain.Repositories.Customers;
+using ITG.Brix.EccSetup.Infrastructure.Providers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using System;
+
+namespace ITG.Brix.EccSetup.UnitTests.Application.Cqs.Commands.Handlers.Customer
+{
+    [TestClass]
+    public class CreateCustomerCommandHandlerTests
+    {
+        [TestMethod]
+        public void ConstructorShouldSucceed()
+        {
+            // Arrange
+            var customerWriteRepository = new Mock<ICustomerWriteRepository>().Object;
+            var identifierProvider = new Mock<IIdentifierProvider>().Object;
+            var versionProvider = new Mock<IVersionProvider>().Object;
+
+            // Act
+            Action ctor = () =>
+            {
+                new CreateCustomerCommandHandler(customerWriteRepository,
+                                                     identifierProvider,
+                                                     versionProvider);
+            };
+
+            // Assert
+            ctor.Should().NotThrow();
+        }
+
+        [TestMethod]
+        public void ConstructorShouldFailWhenBusinessUnitWriteRepositoryIsNull()
+        {
+            // Arrange
+            ICustomerWriteRepository customerWriteRepository = null;
+            var identifierProvider = new Mock<IIdentifierProvider>().Object;
+            var versionProvider = new Mock<IVersionProvider>().Object;
+
+            // Act
+            Action ctor = () =>
+            {
+                new CreateCustomerCommandHandler(customerWriteRepository,
+                                                     identifierProvider,
+                                                     versionProvider);
+            };
+
+            // Assert
+            ctor.Should().Throw<ArgumentNullException>();
+        }
+
+        [TestMethod]
+        public void ConstructorShouldFailWhenIdentifierProviderIsNull()
+        {
+            // Arrange
+            var customerWriteRepository = new Mock<ICustomerWriteRepository>().Object;
+            IIdentifierProvider identifierProvider = null;
+            var versionProvider = new Mock<IVersionProvider>().Object;
+
+            // Act
+            Action ctor = () =>
+            {
+                new CreateCustomerCommandHandler(customerWriteRepository,
+                                             identifierProvider,
+                                             versionProvider);
+            };
+
+            // Assert
+            ctor.Should().Throw<ArgumentNullException>();
+        }
+
+        [TestMethod]
+        public void ConstructorShouldFailWhenVersionProviderIsNull()
+        {
+            // Arrange
+            var customerWriteRepository = new Mock<ICustomerWriteRepository>().Object;
+            var identifierProvider = new Mock<IIdentifierProvider>().Object;
+            IVersionProvider versionProvider = null;
+
+            // Act
+            Action ctor = () =>
+            {
+                new CreateCustomerCommandHandler(customerWriteRepository,
+                                                     identifierProvider,
+                                                     versionProvider);
+            };
+
+            // Assert
+            ctor.Should().Throw<ArgumentNullException>();
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DebugType>Full</DebugType>
+    <ProjectGuid>{10000000-0000-0000-0000-000000000000}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Repositories\Configurations\External\Customer\**" />
+    <EmbeddedResource Remove="Repositories\Configurations\External\Customer\**" />
+    <None Remove="Repositories\Configurations\External\Customer\**" />
+  </ItemGroup>
+
+</Project>

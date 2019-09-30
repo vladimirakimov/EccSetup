@@ -1,0 +1,21 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AllowParallelTestExecution>True</AllowParallelTestExecution>
+    <MetricsExclusionList>
+      <Value>ITG.Brix.EccSetup\ITG.Brix.EccSetup.sfproj</Value>
+      <Value>Program.cs:ITG.Brix.EccSetup.API\ITG.Brix.EccSetup.API.csproj</Value>
+      <Value>ServiceEventSource.cs:ITG.Brix.EccSetup.API\ITG.Brix.EccSetup.API.csproj</Value>
+      <Value>Startup.cs:ITG.Brix.EccSetup.API\ITG.Brix.EccSetup.API.csproj</Value>
+      <Value>API.cs:ITG.Brix.EccSetup.API\ITG.Brix.EccSetup.API.csproj</Value>
+      <Value>ITG.Brix.EccSetup.UnitTests.Domain\ITG.Brix.EccSetup.UnitTests.Domain.csproj</Value>
+      <Value>ITG.Brix.EccSetup.UnitTests.Infrastructure\ITG.Brix.EccSetup.UnitTests.Infrastructure.csproj</Value>
+      <Value>ITG.Brix.EccSetup.UnitTests.API.Context\ITG.Brix.EccSetup.UnitTests.API.Context.csproj</Value>
+      <Value>ITG.Brix.EccSetup.UnitTests.Application\ITG.Brix.EccSetup.UnitTests.Application.csproj</Value>
+      <Value>ITG.Brix.EccSetup.UnitTests.API\ITG.Brix.EccSetup.UnitTests.API.csproj</Value>
+      <Value>ITG.Brix.EccSetup.IntegrationTests.Infrastructure\ITG.Brix.EccSetup.IntegrationTests.Infrastructure.csproj</Value>
+      <Value>ITG.Brix.EccSetup.IntegrationTests.Application\ITG.Brix.EccSetup.IntegrationTests.Application.csproj</Value>
+      <Value>ITG.Brix.EccSetup.IntegrationTests\ITG.Brix.EccSetup.IntegrationTests.csproj</Value>
+    </MetricsExclusionList>
+    <SolutionConfigured>True</SolutionConfigured>
+  </Settings>
+</SolutionConfiguration>
